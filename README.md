@@ -52,7 +52,7 @@ WIth that done, i've made automations using node red to be notified when the sto
           {% elif is_state("sensor.id_status_poele", "8") %}
             Alarme Depression (ou autre alarme?)
           {% elif is_state("sensor.id_status_poele", "9") %}
-            Alarme Température Fumées
+            Erreur - En attente
           {% else %}
             Inconnu
           {% endif %}
