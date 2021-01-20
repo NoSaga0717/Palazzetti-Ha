@@ -82,7 +82,7 @@ WIth that done, i've made automations using node red to be notified when the sto
         friendly_name: Switch Poële
 ```      
 
-##And this is how it appears on my lovelace dashboard:
+## And this is how it appears on my lovelace dashboard:
 
 ![Screenshot](Sans%20titre.png)
 
