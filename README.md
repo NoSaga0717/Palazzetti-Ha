@@ -27,7 +27,7 @@ WIth that done, i've made automations using node red to be notified when the sto
     device_class: timestamp
     value_template: '{{ value_json["INFO"]["TS"] }}'
   
-Using french below and don't have clue about some error codes but it's not a big deal
+# Using french below and don't have clue about some error codes but it's not a big deal
 
   - platform: template
     sensors:
