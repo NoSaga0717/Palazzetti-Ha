@@ -7,7 +7,7 @@ sensor.yaml and switch.yaml files are used to have a cleaner configuration.yaml 
 WIth that done, i've made automations using node red to be notified when the stove have a problem
 
 
-###### In my sensor.yaml file:
+## In my sensor.yaml file:
 ```yaml
   - platform: rest
     resource: http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=GET%20TMPS
@@ -57,7 +57,7 @@ Using french below and don't have clue about some error codes but it's not a big
             Inconnu
           {% endif %}
 ```
-###### In my switch.yaml file:
+## In my switch.yaml file:
 ```yaml
   - platform: command_line
     switches:
@@ -81,5 +81,6 @@ Using french below and don't have clue about some error codes but it's not a big
           {% endif %}
         friendly_name: Switch Poële
 ```      
-######And this is how it appears on my lovelace dashboard:
+
+##And this is how it appears on my lovelace dashboard:
 
