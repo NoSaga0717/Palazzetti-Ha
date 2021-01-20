@@ -62,9 +62,9 @@ WIth that done, i've made automations using node red to be notified when the sto
   - platform: command_line
     switches:
       switchpoele:
-        command_on: "/usr/bin/curl -X GET http://192.168.1.111/cgi-bin/sendmsg.lua?cmd=CMD+ON"
-        command_off: "/usr/bin/curl -X GET http://192.168.1.111/cgi-bin/sendmsg.lua?cmd=CMD+OFF"
-        command_state: "/usr/bin/curl -X GET http://192.168.1.111/cgi-bin/sendmsg.lua?cmd=GET+STATUS"
+        command_on: "/usr/bin/curl -X GET http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=CMD+ON"
+        command_off: "/usr/bin/curl -X GET http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=CMD+OFF"
+        command_state: "/usr/bin/curl -X GET http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=GET+STATUS"
         value_template: >- 
           {% if is_state("sensor.id_status_poele", "1") %}
             True
