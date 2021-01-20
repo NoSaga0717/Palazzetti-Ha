@@ -48,7 +48,7 @@ WIth that done, i've made automations using node red to be notified when the sto
           {% elif is_state("sensor.id_status_poele", "6") %}
             Cycle de nettoyage
           {% elif is_state("sensor.id_status_poele", "7") %}
-            Mode Eco
+            Modulation
           {% elif is_state("sensor.id_status_poele", "8") %}
             Alarme Depression (ou autre alarme?)
           {% elif is_state("sensor.id_status_poele", "9") %}
