@@ -84,8 +84,8 @@ WIth that done, i've made automations using node red to be notified when the sto
 
 ##And this is how it appears on my lovelace dashboard:
 
-https://github.com/NoSaga0717/Palazzetti-Ha/blob/main/Sans%20titre.png
+![Screenshot]Sans%20titre.png
 
-https://github.com/NoSaga0717/Palazzetti-Ha/blob/main/Sans%20titre1.png
+![Screenshot]Sans%20titre1.png
 
-https://github.com/NoSaga0717/Palazzetti-Ha/blob/main/Sans%20titre2.png
+![Screenshot]Sans%20titre2.png
