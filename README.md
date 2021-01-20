@@ -6,11 +6,9 @@ I think it will work as long as you use the communication box. You will have to 
 sensor.yaml and switch.yaml files are used to have a cleaner configuration.yaml file (i use include: ....yaml)
 WIth that done, i've made automations using node red to be notified when the stove have a problem
 
-========================
-In my sensor.yaml file:
-========================
 
-#Poele
+######In my sensor.yaml file:
+
   - platform: rest
     resource: http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=GET%20TMPS
     name: "temp_poele"
@@ -29,7 +27,7 @@ In my sensor.yaml file:
     device_class: timestamp
     value_template: '{{ value_json["INFO"]["TS"] }}'
     
-# Using french below and don't have clue about some error codes but it's not a big deal
+Using french below and don't have clue about some error codes but it's not a big deal
 
   - platform: template
     sensors:
@@ -59,9 +57,9 @@ In my sensor.yaml file:
             Inconnu
           {% endif %}
           
-========================
-In my switch.yaml file:
-======================== 
+
+######In my switch.yaml file:
+
  
   - platform: command_line
     switches:
@@ -85,5 +83,5 @@ In my switch.yaml file:
           {% endif %}
         friendly_name: Switch Poële
         
-And this is how it appears on my lovelace dashboard:
+######And this is how it appears on my lovelace dashboard:
 
