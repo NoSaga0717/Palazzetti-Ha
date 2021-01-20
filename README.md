@@ -83,6 +83,15 @@ WIth that done, i've made automations using node red to be notified when the sto
 ```      
 
 ## And this is how it appears on my lovelace dashboard:
+```yaml
+entities:
+  - entity: switch.switchpoele
+  - entity: sensor.temp_poele
+  - entity: sensor.etat_poele
+show_header_toggle: false
+title: Poele
+type: entities
+```
 
 ![Screenshot](Sans%20titre.png)
 
