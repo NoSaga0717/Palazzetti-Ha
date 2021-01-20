@@ -8,7 +8,7 @@ WIth that done, i've made automations using node red to be notified when the sto
 
 
 ######In my sensor.yaml file:
-
+```yaml
   - platform: rest
     resource: http://192.168.1.xxx/cgi-bin/sendmsg.lua?cmd=GET%20TMPS
     name: "temp_poele"
@@ -26,7 +26,7 @@ WIth that done, i've made automations using node red to be notified when the sto
     name: "id_status_poele_stamp"
     device_class: timestamp
     value_template: '{{ value_json["INFO"]["TS"] }}'
-    
+  
 Using french below and don't have clue about some error codes but it's not a big deal
 
   - platform: template
@@ -56,11 +56,9 @@ Using french below and don't have clue about some error codes but it's not a big
           {% else %}
             Inconnu
           {% endif %}
-          
-
+```
 ######In my switch.yaml file:
-
- 
+```yaml
   - platform: command_line
     switches:
       switchpoele:
@@ -82,6 +80,6 @@ Using french below and don't have clue about some error codes but it's not a big
             False
           {% endif %}
         friendly_name: Switch Poële
-        
+```      
 ######And this is how it appears on my lovelace dashboard:
 
